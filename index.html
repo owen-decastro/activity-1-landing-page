@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/owen-decastro">OWEN DE CASTRO</a></li>
+            <li class="desktopmenu"><a href="#intro">Introduction</a></li>
+            <li class="desktopmenu"><a href="#about">Importance</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/bold-ui/100/hamburger-512.png" height="50" width="50" alt=""></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><img src="x.png" height="50" width="50" alt=""></a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#about">Importance</a></li>
+        </ul>
+    </nav>
+    <div class="hero" id="intro">
+        <div class="intro" id="intrduction">
+            <h1 class="webdev"><span>Introduction to Web Development</span></h1>
+            <h2 class="subwebdev">encompasses the ideation, creation, <br>
+                and maintenance of websites and applications<br> 
+                through the World Wide Web<br></h2>
+        </div>
+        <div class="intro_image">
+            <img  class="www" src="https://coachzul.com/wp-content/uploads/2020/06/logo-website-world-wide-web-svg-png-icon-download-10.png" width="450" height="450" alt="">
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="sub">
+            <h1 class="impo">Importance of Web Development</h1>
+            <div class="important">
+                <div class="one">
+                    <h3>Web development involves creating user-friendly websites, improving search engine visibility, and maintaining a strong online presence. It also enhances security, analytics, and brand credibility.</h3>
+                </div>
+                <div class="two">
+                    <h3>First, it enhances user experience by creating visually appealing and user-friendly websites. Second, performance optimization ensures fast page loads, which is essential for competitiveness and search engine rankings. Third, adhering to accessibility standards broadens your audience reach. Fourth, efficient code reduces hosting costs. Fifth, secure development practices protect user data. Sixth, analytics help track user behavior. Seventh, privacy features build trust. Finally, web development ensures consistent brand presence across platforms, making it essential for online businesses and personal brands alike.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <p>COPYRIGHT © 2024 | All Rights Reserved</p>
+        <p>DEVELOPED BY: MARK JOHN WELL D. DE CASTRO</p>
+    </footer>
+    <script>
+        function showSidebar(){
+            document.querySelector('.sidebar').style.display = 'flex';
+        }
+        function hideSidebar(){
+            document.querySelector(".sidebar").style.display = 'none';
+        }
+    </script>
+</body>
+</html>
